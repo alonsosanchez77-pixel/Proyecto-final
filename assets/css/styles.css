@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&display=swap');
 
-/* --- BASE --- */
 body {
     margin: 0;
     padding: 0;
-    background: #121212;
-    color: #e8e8e8;
+    background: #0f0f0f;
+    color: #f0e8dc;
     font-family: "Playfair Display", serif;
 }
 
@@ -14,9 +13,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1a1a1a !important;
-    padding: 15px 40px;
-    border-bottom: 1px solid #333;
+    background: #111;
+    padding: 20px 60px;
+    border-bottom: 1px solid #2a2a2a;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -24,109 +23,112 @@ body {
 
 .logo {
     font-family: "Great Vibes", cursive;
-    font-size: 2.4em;
-    color: #d6b48c;
+    font-size: 2.8em;
+    color: #deb887;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 35px;
     margin: 0;
+    padding: 0;
 }
 
 .navbar a {
     text-decoration: none;
-    color: #e6d5bf;
+    color: #f3e5c9;
     font-weight: 600;
+    font-size: 1.1em;
     transition: 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #b8926e;
+    color: #d6b48c;
 }
 
 /* --- LAYOUT --- */
 .container {
     display: flex;
     padding: 0;
-    margin-top: 0;
 }
 
 /* --- SIDEBAR --- */
 .sidebar {
-    width: 240px;
-    background: #1a1a1a;
-    padding: 30px;
-    border-right: 1px solid #333;
+    width: 250px;
+    background: #111;
+    padding: 30px 25px;
+    border-right: 1px solid #2a2a2a;
     height: 100vh;
     position: sticky;
-    top: 80px;
+    top: 90px;
 }
 
 .sidebar h2 {
     color: #d6b48c;
     font-family: "Great Vibes", cursive;
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.4em;
+    margin-bottom: 25px;
 }
 
 .sidebar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .sidebar a {
     text-decoration: none;
-    color: #e6d5bf;
+    color: #f3e5c9;
     display: block;
-    padding: 10px 0;
-    border-bottom: 1px solid #333;
+    padding: 12px 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #2a2a2a;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    color: #b8926e;
+    color: #d6b48c;
 }
 
 /* --- CONTENT --- */
 .content {
-    padding: 40px;
+    padding: 50px;
     flex-grow: 1;
 }
 
 .category-title {
-    font-size: 2.4em;
+    font-size: 2.8em;
     font-family: "Great Vibes", cursive;
     color: #d6b48c;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 /* --- CARD GRID --- */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px;
 }
 
 /* --- CARD --- */
 .card {
-    background: #1a1a1a;
+    background: #141414;
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid #333;
+    border: 1px solid #2a2a2a;
     padding-bottom: 20px;
     transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
 }
 
 .card img {
     width: 100%;
-    height: 180px;
+    height: 210px;
     object-fit: cover;
     opacity: 0;
     animation: fadeIn 1s forwards;
@@ -139,16 +141,16 @@ body {
 .card h3 {
     color: #d6b48c;
     margin: 15px;
-    font-size: 1.3em;
+    font-size: 1.35em;
 }
 
 .card p {
     margin: 0 15px 15px;
-    color: #cfcfcf;
-    font-size: 0.9em;
+    color: #dfd7c3;
+    font-size: 0.95em;
 }
 
-/* --- BUTTONS INSIDE CARDS --- */
+/* --- BUTTON INSIDE CARD --- */
 .card .btn {
     background-color: #d6b48c !important;
     color: #1a1a1a !important;
@@ -163,22 +165,22 @@ body {
     transform: translateY(-3px);
 }
 
-/* --- MODAL STYLE --- */
+/* --- MODAL --- */
 .modal-content {
-    background: #1a1a1a !important;
-    color: #e8e8e8 !important;
-    border: 1px solid #444;
+    background: #141414 !important;
+    color: #f0e8dc !important;
+    border: 1px solid #333;
 }
 
 .modal-header,
 .modal-footer {
-    border-color: #333;
+    border-color: #2a2a2a;
 }
 
 .modal-title {
     font-family: "Great Vibes", cursive;
     color: #d6b48c;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 .modal-body img {
