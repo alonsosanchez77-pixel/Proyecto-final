@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1a1a1a;
+    background: #1a1a1a !important;
     padding: 15px 40px;
     border-bottom: 1px solid #333;
     position: sticky;
@@ -32,6 +32,7 @@ body {
     list-style: none;
     display: flex;
     gap: 25px;
+    margin: 0;
 }
 
 .navbar a {
@@ -48,6 +49,8 @@ body {
 /* --- LAYOUT --- */
 .container {
     display: flex;
+    padding: 0;
+    margin-top: 0;
 }
 
 /* --- SIDEBAR --- */
@@ -56,7 +59,7 @@ body {
     background: #1a1a1a;
     padding: 30px;
     border-right: 1px solid #333;
-    height: 100%;
+    height: 100vh;
     position: sticky;
     top: 80px;
 }
@@ -112,7 +115,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid #333;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     transition: transform .3s ease, box-shadow .3s ease;
 }
 
@@ -136,10 +139,63 @@ body {
 .card h3 {
     color: #d6b48c;
     margin: 15px;
+    font-size: 1.3em;
 }
 
 .card p {
-    margin: 0 15px;
+    margin: 0 15px 15px;
     color: #cfcfcf;
     font-size: 0.9em;
+}
+
+/* --- BUTTONS INSIDE CARDS --- */
+.card .btn {
+    background-color: #d6b48c !important;
+    color: #1a1a1a !important;
+    font-weight: 700;
+    border: none;
+    margin: 10px 15px 0;
+    transition: 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #b8926e !important;
+    transform: translateY(-3px);
+}
+
+/* --- MODAL STYLE --- */
+.modal-content {
+    background: #1a1a1a !important;
+    color: #e8e8e8 !important;
+    border: 1px solid #444;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #333;
+}
+
+.modal-title {
+    font-family: "Great Vibes", cursive;
+    color: #d6b48c;
+    font-size: 2em;
+}
+
+.modal-body img {
+    border-radius: 12px;
+}
+
+.btn-warning {
+    background-color: #d6b48c !important;
+    color: #1a1a1a !important;
+    font-weight: 700;
+}
+
+.btn-warning:hover {
+    background-color: #b8926e !important;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
 }
