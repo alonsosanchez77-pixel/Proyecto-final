@@ -27,7 +27,7 @@ body {
     color: #deb887;
 }
 
-.navbar ul {
+.navbar .navbar-nav {
     list-style: none;
     display: flex;
     gap: 35px;
@@ -200,4 +200,30 @@ body {
 /* SMOOTH SCROLL */
 html {
     scroll-behavior: smooth;
+}
+
+/* --- DROPDOWN / SUBMENU (tema oscuro) --- */
+.dropdown-menu.bg-black {
+    background: #111 !important;
+    border: 1px solid #2a2a2a;
+}
+
+.dropdown-menu.bg-black .dropdown-item {
+    color: #f3e5c9;
+}
+
+.dropdown-menu.bg-black .dropdown-item:hover,
+.dropdown-menu.bg-black .dropdown-item:focus {
+    color: #1a1a1a;
+    background-color: #d6b48c;
+}
+
+/* ensure nested submenus are positioned and match theme */
+.dropend > .dropdown-menu {
+    margin-left: .125rem;
+}
+
+/* small spacing for nested lists */
+.dropdown-menu .dropdown-item.dropend {
+    position: relative;
 }
